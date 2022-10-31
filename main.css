@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(
+    90deg,
+    rgb(51, 30, 120),
+    rgb(63, 138, 57),
+    rgb(25, 92, 97)
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .father {
+  width: 27%;
+  height: 69%;
+  background-color: white;
+}
+.container .father .top {
+  width: 100%;
+  height: 20%;
+  background-color: white;
+  border: 2px solid black;
+}
+.container .father .bottom {
+  width: 100%;
+  height: 80%;
+  display: grid;
+  grid-template-columns: 24% 24% 24% 24%;
+  gap: 5px;
+  cursor: pointer;
+  background-color: aquamarine;
+}
+.container .father .bottom div {
+  border: 1px solid black;
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  font-family: sans-serif;
+  border: none;
+}
+.container .father .bottom div:active {
+  box-shadow: inset 0 0 15px 10px rgba(29, 28, 28, 0.246);
+}
+#clear {
+  grid-column: 1/3;
+}
+#equal {
+  grid-column: 3/5;
+}
+.container .father .top {
+  display: flex;
+  justify-content: center;
+  align-items: center;font-size: 30px;
+  overflow: hidden;
+  background-color: cornflowerblue;
+  color: white;
+  border: none;
+}
+.container .father .top .ekran{
+  width: 100%;
+  height: 80%;
+    font-size: 30px;
+    display: flex;
+    justify-content: end;
+    align-items:center;
+}
+
+
